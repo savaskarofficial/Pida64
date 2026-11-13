@@ -8,10 +8,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white" />
   <img src="https://img.shields.io/badge/Min%20SDK-23%20(6.0)-blue" />
-  <img src="https://img.shields.io/badge/Target%20SDK-35%20(15)-blue" />
-  <img src="https://img.shields.io/badge/Trackers-0-brightgreen" />
-  <img src="https://img.shields.io/badge/Ads-None-brightgreen" />
-  <img src="https://img.shields.io/badge/Network-Offline%20Only-brightgreen" />
   <img src="https://img.shields.io/badge/License-Proprietary-red" />
 </p>
 
@@ -30,7 +26,7 @@
 
 ## About
 
-**Pida64** is a premium hardware diagnostics app for Android — built from scratch as a privacy-first alternative to AIDA64, CPU-Z, and DevCheck.
+**Pida64** is a premium hardware diagnostics app for Android. It is built from scratch as a privacy-first alternative to AIDA64, CPU-Z, and DevCheck.
 
 **Zero trackers. Zero ads. Zero network calls. The `INTERNET` permission is not even declared.** Every byte of data stays on your device.
 
@@ -46,7 +42,7 @@ Built by **Undercover IT Firm**.
 
 ## Feature Overview
 
-### 🔍 17 Deep Inspection Screens
+### 17 Deep Inspection Screens
 
 | Category | What You See |
 |---|---|
@@ -68,17 +64,17 @@ Built by **Undercover IT Firm**.
 | **Runtime** | ART/Dalvik version, VM features, JIT status |
 | **Security** | SELinux, encryption state, verified boot, keystore providers |
 
-### 📊 Live Dashboard
+### Live Dashboard
 
 Real-time monitoring on a single screen:
 
-- **CPU** — per-core frequency with progress bars
-- **Battery** — level ring, temperature, power draw (with charging context), current (µA precision), remaining time
-- **Network** — live ↓/↑ throughput via TrafficStats
-- **RAM** — used / total with percentage bar
-- **Internal Storage** — used / total with percentage bar
+- **CPU** - per-core frequency with progress bars
+- **Battery** - level ring, temperature, power draw (with charging context), current (µA precision), remaining time
+- **Network** - live ↓/↑ throughput via TrafficStats
+- **RAM** - used / total with percentage bar
+- **Internal Storage** - used / total with percentage bar
 
-### 📌 7 Home-Screen Widgets
+### 7 Home-Screen Widgets
 
 | Widget | Size | Update Cadence |
 |---|---|---|
@@ -90,9 +86,9 @@ Real-time monitoring on a single screen:
 | Thermal | 2×1 | 10 s |
 | **Dashboard (all-in-one)** | **4×2** | **5 s** |
 
-All 7 widgets share a **single AlarmManager wake-up** — battery cost is constant regardless of how many you stack.
+All 7 widgets share a **single AlarmManager wake-up**, so battery cost is constant regardless of how many you stack.
 
-### 🔋 Persistent Battery Indicator
+### Persistent Battery Indicator
 
 Foreground-service notification with:
 
@@ -103,16 +99,16 @@ Foreground-service notification with:
 - Auto-scaling power (W → mW → µW)
 - "to full" / "to empty" remaining time
 - ⚡ Charging / idle / discharging context labels
-- Silent, ongoing, no badge — stays out of your way
+- Silent, ongoing notifications have no badge and stay out of your way
 
-### 🛠️ Diagnostic Tools
+### Diagnostic Tools
 
-- **CPU Stress Test** — Pins every core at 100% using Miller-Rabin primality. Watch the thermal screen to observe throttling.
-- **Storage Benchmark** — Sequential 64 MB read/write to internal storage with throughput measurement.
-- **Sensor Compass** — Live azimuth from accelerometer + magnetometer fusion.
-- **Thermal Monitor** — Live readings from every `/sys/class/thermal/` zone.
-- **Sensor Monitor** — Live accelerometer, gyroscope, magnetometer, pressure, light, and more.
-- **Runtime Monitor** — Uptime, process count, load average, `/proc/meminfo`.
+- **CPU Stress Test** - Pins every core at 100% using Miller-Rabin primality. Watch the thermal screen to observe throttling.
+- **Storage Benchmark** - Sequential 64 MB read/write to internal storage with throughput measurement.
+- **Sensor Compass** - Live azimuth from accelerometer + magnetometer fusion.
+- **Thermal Monitor** - Live readings from every `/sys/class/thermal/` zone.
+- **Sensor Monitor** - Live accelerometer, gyroscope, magnetometer, pressure, light, and more.
+- **Runtime Monitor** - Uptime, process count, load average, `/proc/meminfo`.
 
 ---
 
@@ -124,7 +120,7 @@ Foreground-service notification with:
 | **Min SDK** | 23 (Android 6.0 Marshmallow) |
 | **Target SDK** | 35 (Android 15) |
 | **UI Framework** | Material 3 (Material Design 3) |
-| **Dependencies** | AndroidX + Material only — zero third-party SDKs |
+| **Dependencies** | AndroidX + Material only: zero third-party SDKs |
 | **Build System** | AGP 8.6.1 / Gradle 8.9 |
 | **Code Shrinking** | R8 full mode with ProGuard rules |
 | **Architecture** | Single-module, ViewBinding, edge-to-edge enforced |
